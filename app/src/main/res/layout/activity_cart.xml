@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/root_layout"
+    android:layout_height="match_parent"
+    android:background="@drawable/carsuper"
+    android:padding="16dp"
+    tools:context=".Booking.Cart">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listCart"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/cardView"
+        android:backgroundTint="@android:color/white"
+        app:srcCompat="@drawable/ic_action_add_black" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnSelectDate"
+                android:text="Select Date"
+                android:textColor="@android:color/black"
+                android:textAllCaps="false"
+                android:textStyle="italic"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                fbutton:fButtonColor="@color/fbutton_color_pumpkin"
+                fbutton:shadowColor="@android:color/black"
+                fbutton:shadowEnabled="true"
+                fbutton:cornerRadius="4dp"
+                />
+
+            <Spinner
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:id="@+id/spinTime"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:background="@color/fbutton_color_pumpkin"
+                android:prompt="@array/time"
+                android:entries="@array/time" />
+
+            <Spinner
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:id="@+id/spinCar"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:background="@color/fbutton_color_pumpkin"
+                android:entries="@array/car"
+                android:prompt="@array/car"/>
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_margin="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Total: "
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/total"
+                    android:text=" 1000"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnPlaceOrder"
+                android:text="Place Order"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_alignParentBottom="true"
+                android:textStyle="italic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                fbutton:fButtonColor="@color/fbutton_color_carrot"
+                fbutton:shadowColor="@android:color/black"
+                fbutton:shadowEnabled="true"
+                fbutton:shadowHeight="5dp"
+                fbutton:cornerRadius="4dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

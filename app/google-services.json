@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1098165609489",
+    "firebase_url": "https://finalcarwash.firebaseio.com",
+    "project_id": "finalcarwash",
+    "storage_bucket": "finalcarwash.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1098165609489:android:8d778f93d2641b05",
+        "android_client_info": {
+          "package_name": "com.carwash.carwash50street"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1098165609489-t99b4mquovduj55799047gg6tki4pdch.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.carwash.carwash50street",
+            "certificate_hash": "b1af0b95db734a236c2b66c2528e1b3b8f8b776c"
+          }
+        },
+        {
+          "client_id": "1098165609489-r4cuvfpu1j0eqbavd1f7763jhro8vek1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6Pl16ZLDROyD6WmrsM0KomgAtNdaWXGw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1098165609489-r4cuvfpu1j0eqbavd1f7763jhro8vek1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

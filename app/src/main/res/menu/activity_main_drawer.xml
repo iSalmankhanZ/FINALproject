@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="nav_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu"
+            android:icon="@drawable/ic_local_car_wash_black_24dp"
+            android:iconTint="@android:color/white"
+            android:title="Menu" />
+
+        <item
+            android:id="@+id/nav_favour"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:iconTint="@android:color/white"
+            android:title="Favourites" />
+
+
+        <item
+            android:id="@+id/nav_home_address"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:iconTint="@android:color/white"
+            android:title="Home Address" />
+
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/ic_local_car_wash_black_24dp"
+            android:iconTint="@android:color/white"
+            android:title="Booking" />
+
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/menu_my_booking"
+            android:iconTint="@android:color/white"
+            android:title="My Booking" />
+
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/ic_fiber_new_black_24dp"
+            android:iconTint="@android:color/white"
+            android:title="Update" />
+
+        <item
+            android:id="@+id/nav_change_pwd"
+            android:icon="@drawable/ic_fiber_pin_black_24dp"
+            android:iconTint="@android:color/white"
+            android:title="Change PIN" />
+
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/menu_help"
+            android:iconTint="@android:color/white"
+            android:title="Contact Us" />
+
+        <item
+            android:id="@+id/nav_terms"
+            android:icon="@drawable/menu_terms_condition"
+            android:iconTint="@android:color/white"
+            android:title="Terms and conditions" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_menu_send"
+            android:iconTint="@android:color/white"
+            android:title="Logout" />
+
+        <item
+
+            android:title="Communicate"
+            android:iconTint="@android:color/white"
+            android:textColor="@android:color/white">
+
+            <menu>
+                <item
+                    android:id="@+id/nav_feedback"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="Feedback" />
+
+            </menu>
+        </item>
+
+    </group>
+
+</menu>

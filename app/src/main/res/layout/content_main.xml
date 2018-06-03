@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Booking.MainActivity"
+    android:background="@drawable/cw1"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/services"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50.0dip">
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_width="200.0dip"
+                android:layout_height="150.0dip"
+                android:background="@drawable/streetlogo" />
+
+            <ImageButton
+                android:id="@+id/imgButton"
+                android:layout_marginTop="40dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@android:color/transparent"
+                android:background="@drawable/car_image"/>
+
+            <TextView
+                android:textSize="18.0sp"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                android:text="SERVICES" />
+        </LinearLayout>
+
+        <Button
+            android:textSize="18.0sp"
+            android:textStyle="normal"
+            android:textColor="@android:color/white"
+            android:id="@+id/make_booking"
+            android:background="@drawable/edit_text_boreder"
+            android:src="@drawable/make_booking_bg"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30.0dip"
+            android:drawableStart="@drawable/ic_assignment_24dp"
+            android:text="  MAKE A BOOKING" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="  "
+        android:textColorHint="@android:color/white"
+        android:id="@+id/txtView4"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</RelativeLayout>
